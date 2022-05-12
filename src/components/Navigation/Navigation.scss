@@ -1,0 +1,53 @@
+.Navigation {
+  margin: 2% 0;
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+    border: none;
+  }
+  .navbar > div > a:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .navbar > div > a, 
+  .gradient-link {
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 7px;
+  }
+  .navbar > div > a:hover:after, 
+  .gradient-link:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  div {
+    .gradient-link::after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 4px;
+      right: 0;
+      position: absolute;
+      background: linear-gradient(to left, #ee7752, #e73c7e, #23a6d5, #23d5ab 100%);
+      background-size: 300% 300%;
+      transition: width .5s ease 0s, right .5s ease 0s;
+      animation: gradient 15s ease infinite;
+      width: 0;
+    }
+    .nav-links {
+      text-transform: uppercase;
+    }
+  }
+  .hamburger-icon {
+    display: none;
+    margin: 0;
+    color: #ffffff;
+  }
+}
+
+
+
+
