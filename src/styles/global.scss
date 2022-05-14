@@ -1,3 +1,5 @@
+@import './variables';
+@import './animations';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap');
 
 * {
@@ -9,27 +11,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Noto Sans', Helvetica, Arial sans-serif;
+  font-family: $font-stack;
   font-size: 1.4rem;
-  color: #000000;
-}
-.gradient-header {
-  top: 0;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 300% 300%;
-	animation: gradient 15s ease infinite;
-	height: 15px;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  color: $primary-color;
 }
 .header-section {
   position: fixed;
@@ -37,8 +21,16 @@ body {
   left: 0;
   width: 100%;
   z-index: 10;
-  background-color: #000000;
+  background-color: $primary-color;
+  .gradient-header {
+    top: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300% 300%;
+    animation: gradient 15s ease infinite;
+    height: 15px;
+  }
 }
+
 .wrapper {
   max-width: 1280px;
   width: 100%;
@@ -50,10 +42,10 @@ li {
 }
 a {
   text-decoration: none;
-  color: #000000;
-}
-a:hover {
- color: #000000;
+  color: $primary-color;
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 
