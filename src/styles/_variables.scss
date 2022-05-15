@@ -5,3 +5,26 @@ $color-orange: #ee7752;
 $color-pink: #e73c7e;
 $color-blue: #23a6d5;
 $color-seafoam: #23d5ab;
+
+/************ Screen sizes **************/
+$screen-xsm: 300px;
+$screen-md: 500px;
+$screen-lg: 768px;
+$screen-xl: 1024px;
+$screen-xxl: 1200px;
+// $screen-full: 1400px;
+
+/****** Extra small mobile devices (Galaxy Fold, etc.) ******/
+// @media screen and (max-width: 300px)
+
+/****** Mobile devices ******/
+// @media screen and (min-width: 301px) and (max-width: 500px)
+
+/****** iPads, Tablets ******/
+// @media screen and (min-width: 501px) and (max-width: 768px)
+
+/****** Small screens, laptops ******/
+// @media screen and (min-width: 769px) and (max-width: 1024px)
+
+/****** Desktops, large screens ******/
+// @media screen and (min-width: 1025px) and (max-width: 1200px)

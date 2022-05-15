@@ -4,7 +4,7 @@ import './Logo.scss';
 function Logo() {
 
   return (
-    <p><a id="logo" className="logo" href="#top">Surry Jones Mowery</a></p>
+    <p id="logo"><a className="logo" href="#top">Surry Jones Mowery</a></p>
   )
 }
 

@@ -1,0 +1,15 @@
+@import '../styles/variables';
+
+@mixin extraSmallBreakpoint {
+  @media (max-width: $screen-xsm) {
+    @content;
+  }
+}
+
+
+
+// @mixin smMinBreakPoint {
+//   @media (min-width: #{$screen-sm}) {
+//       @content;
+//   }
+// }
