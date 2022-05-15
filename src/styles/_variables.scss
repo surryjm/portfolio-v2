@@ -8,10 +8,14 @@ $color-seafoam: #23d5ab;
 
 /************ Screen sizes **************/
 $screen-xsm: 300px;
-$screen-md: 500px;
-$screen-lg: 768px;
-$screen-xl: 1024px;
-$screen-xxl: 1200px;
+$screen-sm-start: 301px;
+$screen-sm-end: 500px;
+$screen-md-start: 501px;
+$screen-md-end: 768px;
+$screen-l-start: 769px;
+$screen-l-end: 1024px;
+$screen-xl-start: 1025px;
+$screen-xl-end: 1200px;
 // $screen-full: 1400px;
 
 /****** Extra small mobile devices (Galaxy Fold, etc.) ******/

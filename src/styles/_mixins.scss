@@ -6,10 +6,26 @@
   }
 }
 
+@mixin smallBreakpoint {
+  @media (min-width: $screen-sm-start) and (max-width: $screen-sm-end) {
+    @content;
+  }
+}
 
+@mixin mediumBreakpoint {
+  @media (min-width: $screen-md-start) and (max-width: $screen-md-end) {
+    @content;
+  }
+}
 
-// @mixin smMinBreakPoint {
-//   @media (min-width: #{$screen-sm}) {
-//       @content;
-//   }
-// }
+@mixin largeBreakpoint {
+  @media (min-width: $screen-l-start) and (max-width: $screen-l-end) {
+    @content;
+  }
+}
+
+@mixin extraLargeBreakpoint {
+  @media (min-width: $screen-xl-start) and (max-width: $screen-xl-end) {
+    @content;
+  }
+}
