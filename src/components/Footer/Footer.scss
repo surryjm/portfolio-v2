@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+@import '../../styles/animations';
+@import '../../styles/mixins';
+
+#contact {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 2rem 0 6rem 0;
+  text-align: center;
+}
+.footer-fontAwesome {
+  margin-right: .75rem;
+}
+#contact a {
+  color: #ffffff;
+}
+#contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.5rem;
+  font-size: 1.3rem;
+}
+#contact > ul :not(:last-child) {
+  margin-right: 4rem;
+}
+.footer-line {
+  padding-bottom: 4rem;
+  margin: 3rem 20% 0 20%;
+}
+.gradient-link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(to left, #ee7752, #e73c7e, #23a6d5, #23d5ab 100%);
+  background-size: 300% 300%;
+  transition: width .5s ease 0s, right .5s ease 0s;
+  animation: gradient 15s ease infinite;
+  width: 0;
+}
+.gradient-link {
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 7px;
+} 
+.gradient-link:hover:after {
+  left: 0;
+  width: 100%;
+}

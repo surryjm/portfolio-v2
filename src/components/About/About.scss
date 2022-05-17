@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+@import '../../styles/animations';
+@import '../../styles/mixins';
+
+#about, #projects {
+  padding-top: 7rem;
+}
+#about > .wrapper > .subtitle, #projects > .wrapper > .subtitle {
+  text-align: left;
+}
