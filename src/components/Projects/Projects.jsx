@@ -1,5 +1,7 @@
 import React from 'react';
+import Project from '../Project/Project';
 import './Projects.scss';
+import education from '../../assets/education-app-image.jpg';
 
 function Projects() {
 
@@ -9,6 +11,7 @@ function Projects() {
         <h2>Projects</h2>
         <p className="subtitle">A Few Things I've Built</p>
         <div className="projects-container">
+          <Project />
           <div className="project-tile">
             <div className="project-image-text">
               <picture>
@@ -17,15 +20,15 @@ function Projects() {
                         (min-width: 769px) 337px,
                         (min-width: 1025px) 452px,
                         (min-width: 1201px) 552px"  
-                  srcset="images/coffee-shop-image-337.webp 337w,
-                          images/coffee-shop-image-452.webp 452w,
-                          images/coffee-shop-image-552.webp 552w"
+                  srcSet="/assets/coffee-shop-image-337.webp 337w,
+                          /assets/coffee-shop-image-452.webp 452w,
+                          /assets/coffee-shop-image-552.webp 552w"
                   type="image/webp" />
                 <source 
-                  srcset="images/coffee-shop-image.jpg"
+                  srcSet="/assets/coffee-shop-image.jpg"
                   type="image/jpeg" />
                 <img 
-                  src="images/coffee-shop-image.jpg" 
+                  src="/assets/coffee-shop-image.jpg" 
                   alt="Coffee-Shop-project" 
                   width="552"
                   height="345" 
@@ -51,15 +54,15 @@ function Projects() {
                         (min-width: 769px) 337px,
                         (min-width: 1025px) 452px,
                         (min-width: 1201px) 552px"  
-                  srcset="images/education-app-image-337.webp 337w,
-                          images/education-app-image-452.webp 452w,
-                          images/education-app-image-552.webp 552w"
+                  srcSet="/src/assets/education-app-image-337.webp 337w,
+                          /src/assets/education-app-image-452.webp 452w,
+                          /src/assets/education-app-image-552.webp 552w"
                   type="image/webp" />
                 <source 
                   type="image/jpeg" 
-                  srcset="images/education-app-image.jpg"/>
+                  srcSet="/src/assets/education-app-image.jpg"/>
                 <img 
-                  src="images/education-app-image.jpg" 
+                  src={education}
                   alt="Education-app-project" 
                   width="524" 
                   height="331" 
