@@ -1,7 +1,18 @@
 import React from 'react';
 import Project from '../Project/Project';
 import './Projects.scss';
-import education from '../../assets/education-app-image.jpg';
+
+// const projectItems = [
+//   {title: "Coffee Shop website", 
+//   description: "A prototype site for my friend's coffee shop, Ten Ton Coffee. Made with Vue, Nuxt, Axios, SCSS and deployed with Netlify", 
+//   siteURL: "https://festive-joliot-8258ef.netlify.app/", 
+//   repoURL: "https://github.com/surryjm/coffee-shop"},
+
+//   {title: "Education App", 
+//   description: "Group project app that allows teachers, students and parents to log in and view the site according to their role - built with MongoDB, Express, Node.js, Mustache and Bootstrap, deployed with Heroku", 
+//   siteURL: "https://dry-wave-18780.herokuapp.com/", 
+//   repoURL: "https://github.com/JS330-Education-App/final-project"}
+// ]
 
 function Projects() {
 
@@ -12,7 +23,10 @@ function Projects() {
         <p className="subtitle">A Few Things I've Built</p>
         <div className="projects-container">
           <Project />
-          <div className="project-tile">
+          {/* {projectItems.map((item) => (
+            <Project title={item.title} description={item.description} siteURL={item.siteURL} repoURL={item.repoURL} />
+          ))} */}
+          {/* <div className="project-tile">
             <div className="project-image-text">
               <picture>
                 <source 
@@ -25,7 +39,7 @@ function Projects() {
                           /assets/coffee-shop-image-552.webp 552w"
                   type="image/webp" />
                 <source 
-                  srcSet="/assets/coffee-shop-image.jpg"
+                  srcSet={education}
                   type="image/jpeg" />
                 <img 
                   src="/assets/coffee-shop-image.jpg" 
@@ -147,7 +161,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
   </section>
