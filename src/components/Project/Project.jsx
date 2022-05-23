@@ -1,25 +1,29 @@
 import React from 'react';
 import '../Project/Project.scss';
-import Image from '../Image/Image';
 
-const projectItems = [
-  {title: "Coffee Shop website", 
-  description: "A prototype site for my friend's coffee shop, Ten Ton Coffee. Made with Vue, Nuxt, Axios, SCSS and deployed with Netlify", 
-  siteURL: "https://festive-joliot-8258ef.netlify.app/", 
-  repoURL: "https://github.com/surryjm/coffee-shop"},
-
-  {title: "Education App", 
-  description: "Group project app that allows teachers, students and parents to log in and view the site according to their role - built with MongoDB, Express, Node.js, Mustache and Bootstrap, deployed with Heroku", 
-  siteURL: "https://dry-wave-18780.herokuapp.com/", 
-  repoURL: "https://github.com/JS330-Education-App/final-project"}
-]
-
-export default function Project() {
+export default function Project( {projects} ) {
   return (
-    projectItems.map((item, key) => (
-    <div className="project-tile" key={key}>
+    projects.map((item, index) => (
+    <div className="project-tile" key={index}>
       <div className="project-image-text">
-        <Image />
+        <picture>
+          <source 
+            sizes="(min-width: 501px) 452px,
+                   (min-width: 769px) 337px,
+                   (min-width: 1025px) 452px,
+                   (min-width: 1201px) 552px"  
+            srcSet={`${item.webp337} 337w, ${item.webp452} 452w, ${item.webp552} 552w`}
+            type="image/webp" />
+          <source 
+            srcSet={item.jpg}
+            type="image/jpeg" />
+          <img 
+            src={item.jpg}
+            alt={item.title} 
+            width="552"
+            height="345" 
+            className="project-image"/>
+        </picture>
         <div className="project-title">
           <div>
             <h3>{item.title}</h3>
