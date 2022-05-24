@@ -43,18 +43,18 @@
   margin-right: 30px;
   width: fit-content;
 }
-.project-link > span, .project-github > span {
+.project-link > span, .project-repo > span {
   border: 1px solid;
   padding: 20px;
   transition: .3s;
 }
-.project-link > span:hover, .project-github > span:hover {
+.project-link > span:hover, .project-repo > span:hover {
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #000000;
   padding: 20px;
 }
-.project-github {
+.project-repo {
   width: fit-content;
 }
 .project-title {
