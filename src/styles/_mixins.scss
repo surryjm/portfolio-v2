@@ -18,6 +18,12 @@
   }
 }
 
+@mixin extraSmallThruMediumBreakpoints {
+  @media (max-width: $screen-md-end) {
+    @content;
+  }
+}
+
 @mixin largeBreakpoint {
   @media (min-width: $screen-l-start) and (max-width: $screen-l-end) {
     @content;
