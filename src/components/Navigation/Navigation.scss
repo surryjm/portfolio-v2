@@ -1,5 +1,5 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
 
 .Navigation {
   margin: 3% 0;
@@ -50,7 +50,7 @@
       .nav-links {
         text-transform: uppercase;
       }
-    div.full > ul {
+    div.navShowing > ul {
       @include extraSmallThruMediumBreakpoints {
         display: flex;
         flex-direction: column;
@@ -62,14 +62,14 @@
         background-color: #000000;
       }
     }
-    div.full > ul > li {
+    div.navShowing > ul > li {
       @include extraSmallThruMediumBreakpoints {
         width: 100%;
         padding: 2rem 0;
         text-align: center;
       }
     }
-    div.mobile > ul > li {
+    div.navNotShowing > ul > li {
       @include extraSmallThruMediumBreakpoints {
         display: none;
       }

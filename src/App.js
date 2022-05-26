@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import WelcomeMessage from './components/WelcomeMessage/WelcomeMessage';
 import About from './components/About/About';
@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer';
 import './styles/global.scss';
 
 function App() {
+  const [isNavFull, setIsNavFull] = useState(false);
+
   return (
     <div className="App">
       <header id="#top" className="header-section">
@@ -14,11 +16,11 @@ function App() {
         <div className="gradient-header"></div>
         <div className="wrapper">
         {/*-- NAV --*/}
-          <Navigation />
+          <Navigation setIsNavFull={ setIsNavFull } isNavFull={ isNavFull }/>
         </div>
       </header>
       <div className="angle-nav"></div>
-      <main id="main">
+      <main id="main" className={isNavFull ? "blur" : ""}>
         <WelcomeMessage />
         <div className="angle-welcome"></div>
         <About />

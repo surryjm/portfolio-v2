@@ -1,6 +1,6 @@
-@import './variables';
-@import './animations';
-@import './mixins';
+@import './_variables';
+@import './_animations';
+@import './_mixins';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap');
 
 * {
@@ -77,6 +77,17 @@ a {
   pointer-events: none;
   user-select: none;
   transition: all .25s;
+}
+#main {
+  margin: 1% 0 0 0;
+}
+@include mediumBreakpointOnward {
+  .blur {
+    filter: none;
+    pointer-events: initial;
+    user-select: initial;
+    transition: none;
+  }
 }
 
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import Logo from '../Logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,8 +11,11 @@ const navigationItems = [
   { url: '#contact', label: 'Contact' }
 ]
 
-function Navigation() {
-  const [isNavFull, setIsNavFull] = useState(false);
+function Navigation({ isNavFull, setIsNavFull }) {
+
+  const toggleClass = () => {
+    setIsNavFull(!isNavFull);
+  };
 
   return (
     <div className="Navigation">
@@ -21,18 +24,16 @@ function Navigation() {
         <button id="hamburger-icon" onClick={() => setIsNavFull(!isNavFull)}>
           <FontAwesomeIcon icon={faBars} aria-hidden="true" className="hamburger-icon" />
         </button>
-        <div className={isNavFull ? "full" : "mobile"}>
+        <div className={isNavFull ? "navShowing" : "navNotShowing"}>
           <ul>
           {navigationItems.map((navItem) => (
-            <li><HashLink to={navItem.url} key={navItem.label} className="gradient-link nav-links">{navItem.label}</HashLink></li>
+            <li>
+              <HashLink to={navItem.url} key={navItem.label} className="gradient-link nav-links" onClick={toggleClass}>{navItem.label}</HashLink>
+            </li>
           ))}
           </ul>
         </div>
       </nav>
-
-      {/* <a id="hamburger-icon" href="javascript:void(0);" >
-        <FontAwesomeIcon icon={faBars} aria-hidden="true" className="hamburger-icon" />
-      </a> */}
     </div>
   )
 }

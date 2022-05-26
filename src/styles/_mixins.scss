@@ -24,6 +24,12 @@
   }
 }
 
+@mixin mediumBreakpointOnward {
+  @media (min-width: $screen-l-start) {
+    @content;
+  }
+}
+
 @mixin largeBreakpoint {
   @media (min-width: $screen-l-start) and (max-width: $screen-l-end) {
     @content;

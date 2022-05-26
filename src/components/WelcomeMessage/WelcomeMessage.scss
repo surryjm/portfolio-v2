@@ -1,6 +1,6 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
-@import '../../styles/animations'; 
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
+@import '../../styles/_animations'; 
 
 .container-rotate span {
   opacity: 0;
@@ -72,9 +72,6 @@ h2 {
   font-weight: normal;
   margin-bottom: 1rem;
   text-transform: uppercase;
-}
-main {
-  margin: 1% 0 0 0;
 }
 #welcome-section {
   display: flex;
