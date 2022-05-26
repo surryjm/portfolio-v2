@@ -11,7 +11,7 @@ const navigationItems = [
   { url: '#contact', label: 'Contact' }
 ]
 
-function Navigation({ isNavFull, setIsNavFull }) {
+function Navigation({ isNavFull, setIsNavFull, isLargeBreakpoint }) {
 
   const toggleClass = () => {
     setIsNavFull(!isNavFull);
