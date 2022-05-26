@@ -11,16 +11,12 @@ const navigationItems = [
   { url: '#contact', label: 'Contact' }
 ]
 
-function Navigation({ isNavFull, setIsNavFull, isLargeBreakpoint }) {
-
-  const toggleClass = () => {
-    setIsNavFull(!isNavFull);
-  };
+function Navigation({ isNavFull, setIsNavFull, toggleClass, isLargeBreakpoint }) {
 
   return (
     <div className="Navigation">
       <nav id="navbar" className="navbar">
-        <Logo />
+        <Logo toggleClass={toggleClass} />
         <button id="hamburger-icon" onClick={() => setIsNavFull(!isNavFull)}>
           <FontAwesomeIcon icon={faBars} aria-hidden="true" className="hamburger-icon" />
         </button>

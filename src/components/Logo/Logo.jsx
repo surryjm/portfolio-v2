@@ -2,11 +2,10 @@ import React from 'react';
 import './Logo.scss';
 import { HashLink } from 'react-router-hash-link';
 
-function Logo() {
+function Logo({ toggleClass }) {
 
   return (
-    // <p id="logo"><a className="logo" href="#top">Surry Jones Mowery</a></p>
-    <HashLink to="#top" className="logo" id="logo">Surry Jones Mowery</HashLink>
+    <HashLink to="#top" className="logo" id="logo" onClick={toggleClass}>Surry Jones Mowery</HashLink>
   )
 }
 

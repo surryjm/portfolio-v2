@@ -10,6 +10,10 @@ function App() {
   const [isNavFull, setIsNavFull] = useState(false);
   const [isLargeBreakpoint, setIsLargeBreakpoint] = useState(window.innerWidth > 768);
 
+  const toggleClass = () => {
+    setIsNavFull(!isNavFull);
+  };
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       const breakpoint = window.innerWidth > 768;
@@ -38,6 +42,7 @@ function App() {
           <Navigation 
             setIsNavFull={ setIsNavFull } 
             isNavFull={ isNavFull } 
+            toggleClass={toggleClass}
             isLargeBreakpoint={ isLargeBreakpoint }
           />
         </div>
