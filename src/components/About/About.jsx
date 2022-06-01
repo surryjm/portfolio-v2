@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.scss';
 
-function About() {
+export default function About() {
 
   return (
     <section id="about">
@@ -22,5 +22,3 @@ function About() {
       </section>
   )
 }
-
-export default About;

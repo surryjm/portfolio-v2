@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import WelcomeMessage from './components/WelcomeMessage/WelcomeMessage';
 import About from './components/About/About';
@@ -8,29 +8,34 @@ import './styles/global.scss';
 
 function App() {
   const [isNavFull, setIsNavFull] = useState(false);
-  const [isLargeBreakpoint, setIsLargeBreakpoint] = useState(window.innerWidth > 768);
+  // const [isLargeBreakpoint, setIsLargeBreakpoint] = useState(window.innerWidth > 768);
+  // const [isLargeBreakpoint, setIsLargeBreakpoint] = useState(false);
 
   const toggleClass = () => {
     setIsNavFull(!isNavFull);
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      const breakpoint = window.innerWidth > 768;
-      console.log(`breakpoint: ${breakpoint}`);
-      console.log(`isLargeBreakpoint: ${isLargeBreakpoint}`);
-      if (breakpoint !== isLargeBreakpoint) {
-        setIsLargeBreakpoint(isLargeBreakpoint);
-      } 
-    }, []);
-  }, [isLargeBreakpoint]);
+  const toggleNavClose = () => {
+    if (isNavFull) {
+      setIsNavFull(isNavFull === false);
+    }
+  }
 
-//   useEffect(() => {
-//     window.addEventListener("resize", () => {
-//         const ismobile = window.innerWidth < 1200;
-//         if (ismobile !== isMobile) setIsMobile(ismobile);
-//     }, false);
-// }, [isMobile]);
+  // const handleResizeEvent = () => {
+  //   const breakpoint = window.innerWidth > 768;
+  //   if (breakpoint === isLargeBreakpoint) {
+  //     setIsLargeBreakpoint(isLargeBreakpoint === true);
+  //   } else if (breakpoint !== isLargeBreakpoint) {
+  //     setIsLargeBreakpoint(isLargeBreakpoint === false);
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResizeEvent)
+  //     return () => {
+  //       window.removeEventListener("resize", handleResizeEvent);
+  //     }
+  //   }, [isLargeBreakpoint]);
 
   return (
     <div className="App">
@@ -43,7 +48,8 @@ function App() {
             setIsNavFull={ setIsNavFull } 
             isNavFull={ isNavFull } 
             toggleClass={toggleClass}
-            isLargeBreakpoint={ isLargeBreakpoint }
+            toggleNavClose={toggleNavClose}
+            // isLargeBreakpoint={ isLargeBreakpoint }
           />
         </div>
       </header>

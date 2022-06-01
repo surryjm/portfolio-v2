@@ -1,7 +1,7 @@
 import React from 'react';
 import './WelcomeMessage.scss';
 
-function WelcomeMessage() {
+export default function WelcomeMessage() {
 
   return (
     <section id="welcome-section">
@@ -23,8 +23,6 @@ function WelcomeMessage() {
     </section>
   )
 }
-
-export default WelcomeMessage;
 
 
 

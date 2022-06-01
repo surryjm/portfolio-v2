@@ -19,7 +19,7 @@ import rockPaperScissors452 from '../../assets/rock-paper-scissors-image-452.web
 import rockPaperScissors552 from '../../assets/rock-paper-scissors-image-552.webp';
 
 
-function Projects() {
+export default function Projects() {
   const projectItems = [
     {
       title: "Coffee Shop website", 
@@ -78,5 +78,3 @@ function Projects() {
   </section>
   )
 }
-
-export default Projects;

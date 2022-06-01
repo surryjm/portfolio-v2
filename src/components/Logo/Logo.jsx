@@ -2,11 +2,9 @@ import React from 'react';
 import './Logo.scss';
 import { HashLink } from 'react-router-hash-link';
 
-function Logo({ toggleClass }) {
+export default function Logo({ toggleNavClose }) {
 
   return (
-    <HashLink to="#top" className="logo" id="logo" onClick={toggleClass}>Surry Jones Mowery</HashLink>
+    <HashLink to="#top" className="logo" id="logo" onClick={toggleNavClose}>Surry Jones Mowery</HashLink>
   )
 }
-
-export default Logo;

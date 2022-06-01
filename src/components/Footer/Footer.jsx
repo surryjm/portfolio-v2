@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faCodepen } from "@fortawesome/free-brands-svg-icons";
 import './Footer.scss';
 
-function Footer() {
+export default function Footer() {
 
   return (
     <footer id="contact">
@@ -28,5 +28,3 @@ function Footer() {
     </footer>
   )
 }
-
-export default Footer;

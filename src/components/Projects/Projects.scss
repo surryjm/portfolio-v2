@@ -49,9 +49,9 @@
   transition: .3s;
 }
 .project-link > span:hover, .project-repo > span:hover {
-  background-color: #000000;
-  color: #ffffff;
-  border: 1px solid #000000;
+  background-color: $primary-color;
+  color: $color-white;
+  border: 1px solid $primary-color;
   padding: 20px;
 }
 .project-repo {
