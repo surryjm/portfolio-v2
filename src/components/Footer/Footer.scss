@@ -7,10 +7,7 @@
   background-color: #000000;
   padding: 2rem 0 6rem 0;
   text-align: center;
-  @include extraSmallBreakpoint {
-    padding: 1rem 5% 0 5%;
-  }
-  @include smallBreakpoint {
+  @include extraSmallThruSmallBreakpoints {
     padding: 1rem 5% 0 5%;
   }
   @include mediumBreakpoint {
@@ -27,18 +24,11 @@
     justify-content: center;
     margin-top: 3.5rem;
     font-size: 1.3rem;
-    @include extraSmallBreakpoint {
+    @include extraSmallThruSmallBreakpoints {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      margin: 2rem 20% 0 23%;
-      font-size: 1.3rem;
-    }
-    @include smallBreakpoint {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin: 2rem 26% 0 36%;
+      align-items: center;
+      margin: 2rem 0 0 0;
       font-size: 1.3rem;
     }
     @include mediumBreakpoint {
@@ -47,19 +37,8 @@
       align-items: center;
       font-size: 1.3rem;
     }
-    // @include extraSmallThruMediumBreakpoints {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: flex-start;
-  
-    //   margin-top: 2rem;
-    //   font-size: 1.3rem;
-    // }
     li {
-      @include extraSmallBreakpoint {
-        padding: 20px 0 20px 0;
-      }
-      @include smallBreakpoint {
+      @include extraSmallThruSmallBreakpoints {
         padding: 20px 0 20px 0;
       }
       @include mediumBreakpoint {
@@ -108,19 +87,21 @@
   .footer-line {
     padding-bottom: 4rem;
     margin: 3rem 20% 0 20%;
-    @include extraSmallBreakpoint {
+    @include extraSmallThruSmallBreakpoints {
       border: none;
       padding-bottom: 2rem;
-      margin: 3rem 17% 0 5%;
-    }
-    @include smallBreakpoint {
-      border: none;
-      padding-bottom: 2rem;
-      margin: 3rem 17% 0 5%;
+      margin: 3rem 0 0 0;
     }
     @include mediumBreakpoint {
       border: none;
       padding-bottom: 4rem;
+    }
+    @include largeBreakpoint {
+      padding-bottom: 4rem;
+      margin: 3rem 5% 0 5%;
+    }
+    @include extraLargeBreakpoint {
+      margin: 3rem 15% 0 15%;
     }
   }
 }
