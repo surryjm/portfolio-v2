@@ -2,9 +2,40 @@
 @import '../../styles/_animations';
 @import '../../styles/_mixins';
 
-#about, #projects {
+#about {
   padding-top: 7rem;
-}
-#about > .wrapper > .subtitle, #projects > .wrapper > .subtitle {
-  text-align: left;
+  @include mediumBreakpoint {
+    margin: 0;
+  }
+  @include largeBreakpoint {
+    padding-bottom: 1rem;
+  }
+  @include extraLargeBreakpoint {
+    margin: 0;
+  }
+  .wrapper > .subtitle {
+    text-align: left;
+    @include extraSmallThruSmallBreakpoints {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    @include mediumBreakpoint {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+  .wrapper > .long-description {
+    @include extraSmallThruSmallBreakpoints {
+      width: 100%;
+      line-height: 1.7;
+      margin-top: 1rem;
+    }
+    @include mediumBreakpoint {
+      width: 100%;
+      line-height: 1.7;
+      margin-top: 1rem;
+    }
+  }
 }
