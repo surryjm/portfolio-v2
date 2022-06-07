@@ -32,7 +32,29 @@
         margin-bottom: 30px;
       }
     }
-    // div > .navMenu > li::after {
+    div > .navMenu.navShowing {
+      @include extraSmallThruMediumBreakpoints {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: $primary-color;
+      }
+    }
+    div > .navMenu.navShowing > li {
+      @include extraSmallThruMediumBreakpoints {
+        width: 100%;
+        padding: 2rem 0;
+        text-align: center;
+      }
+    }
+    div > .navMenu.navNotShowing > li {
+      @include extraSmallThruMediumBreakpoints {
+        display: none;
+      }
+    }
     .gradient-link::after {
       background: none repeat scroll 0 0 transparent;
       bottom: 0;
@@ -50,30 +72,6 @@
       .nav-links {
         text-transform: uppercase;
       }
-    // div.navShowing > ul {
-    //   @include extraSmallThruMediumBreakpoints {
-    //     display: flex;
-    //     flex-direction: column;
-    //     position: absolute;
-    //     top: 70px;
-    //     left: 0;
-    //     width: 100%;
-    //     // height: calc(100vh - 60px);
-    //     background-color: #000000;
-    //   }
-    // }
-    // div.navShowing > ul > li {
-    //   @include extraSmallThruMediumBreakpoints {
-    //     width: 100%;
-    //     padding: 2rem 0;
-    //     text-align: center;
-    //   }
-    // }
-    // div.navNotShowing > ul > li {
-    //   @include extraSmallThruMediumBreakpoints {
-    //     display: none;
-    //   }
-    // }
     div > a, .gradient-link {
       color: $color-white;
       position: relative;
@@ -98,33 +96,5 @@
   @include extraSmallThruMediumBreakpoints {
     display: block;
     margin-top: -2px;
-  }
-}
-
-.navbar > div > .navMenu.navShowing {
-  @include extraSmallThruMediumBreakpoints {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    // height: calc(100vh - 60px);
-    background-color: $primary-color;
-  }
-}
-.navbar > div > .navMenu.navShowing > li {
-  @include extraSmallThruMediumBreakpoints {
-    width: 100%;
-    padding: 2rem 0;
-    text-align: center;
-    // display: block;
-    // border-top: 1px solid #212121;
-    // border-bottom: 1px solid #363636;
-  }
-}
-.navbar > div > .navMenu.navNotShowing > li {
-  @include extraSmallThruMediumBreakpoints {
-    display: none;
   }
 }

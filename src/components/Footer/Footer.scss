@@ -60,9 +60,9 @@
       right: 0;
       position: absolute;
       background: linear-gradient(to left, $color-orange, $color-pink, $color-blue, $color-seafoam 100%);
-      background-size: 300% 300%;
+      background-size: 200% 200%;
       transition: width .5s ease 0s, right .5s ease 0s;
-      animation: gradient 15s ease infinite;
+      animation: gradient 10s ease infinite;
       width: 0;
     }
     .gradient-link {
