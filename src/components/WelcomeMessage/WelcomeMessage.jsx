@@ -8,7 +8,7 @@ export default function WelcomeMessage() {
       <div className="wrapper">
         <h1>Hi! I'm Surry</h1>
         <p className="welcome-subtitle">I'm a Seattle-based front-end developer and
-            <span className="container-rotate">
+          <span className="container-rotate">
             <span className="rotate">a Mom.</span>
             <span className="rotate">an instructional assistant.</span>
             <span className="rotate">a runner.</span>

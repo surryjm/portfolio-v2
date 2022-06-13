@@ -27,6 +27,8 @@
     }
   }
   .wrapper > .long-description {
+    line-height: 1.7;
+    margin-top: 1rem;
     @include extraSmallThruSmallBreakpoints {
       width: 100%;
       line-height: 1.7;

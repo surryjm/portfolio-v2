@@ -2,77 +2,6 @@
 @import '../../styles/_mixins';
 @import '../../styles/_animations'; 
 
-.container-rotate span {
-  opacity: 0;
-  animation: rotate-word 20s linear infinite;
-  position: absolute;
-  overflow: hidden;
-}
-.container-rotate span:nth-child(2) {
-  animation-delay: 2.5s;
-}
-.container-rotate span:nth-child(3) {
-  animation-delay: 5s;
-}
-.container-rotate span:nth-child(4) {
-  animation-delay: 7.5s;
-}
-.container-rotate span:nth-child(5) {
-  animation-delay: 10s;
-}
-.container-rotate span:nth-child(6) {
-  animation-delay: 12.5s;
-}
-.container-rotate span:nth-child(7) {
-  animation-delay: 15s;
-}
-.container-rotate span:nth-child(8) {
-  animation-delay: 17.5s;
-}
-.rotate {
-  text-indent: .25em;
-}
-// @keyframes rotate-word {
-//   0% {
-//     opacity: 0;
-//   }
-//   1% {
-//     transform: translateY(-20px);
-//   }
-//   4% {
-//     opacity: 0;
-//   }
-//   5% {
-//     opacity: 1;
-//     transform: translateY(0px);
-//   }
-//   17% {
-//     opacity: 1;
-//     transform: translateY(0px);
-//   }
-//   19% {
-//     opacity: 0;
-//   }
-//   20% {
-//     transform: translateY(20px);
-//   }
-//   80% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 0;
-//   }
-// }
-h1, h3, .subtitle {
-  font-family: 'Noto Serif', serif;
-  font-weight: 700;
-}
-h2 {
-  font-size: 1.1rem;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
 #welcome-section {
   display: flex;
   flex-direction: column;
@@ -82,22 +11,96 @@ h2 {
   border: none;
   background-color: $primary-color;
   color: $color-white;
+  @include extraSmallBreakpoint {
+    padding-top: 5rem;
+    margin: 0;
+  }
+  @include smallBreakpoint {
+    padding-top: 5rem;
+    margin: 0;
+  }
+  @include mediumBreakpoint {
+    margin: 0;
+  }
+  @include extraLargeBreakpoint {
+    padding: 10% 0;
+  }
+  h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 10%;
+    @include extraSmallBreakpoint {
+      font-size: 2.3rem;
+      padding: 0 1rem .75rem 0;
+    }
+    @include smallBreakpoint {
+      font-size: 2.6rem;
+      padding: 0 1rem .75rem 0;
+    }
+    @include mediumBreakpoint {
+      font-size: 3.8rem;
+      padding: 0 1rem .75rem 0;
+    }
+    @include largeBreakpoint {
+      font-size: 4rem;
+    }
+    @include extraLargeBreakpoint {
+      font-size: 4.5rem;
+    }
+  }
+  .welcome-subtitle {
+    font-size: 2.6rem;
+    border: none;
+    width: 70%;
+    @include extraSmallBreakpoint {
+      font-size: 1rem;
+      width: 45%;
+    }
+    @include smallBreakpoint {
+      font-size: 1.4rem;
+      width: 65%;
+    }
+    @include mediumBreakpoint {
+      font-size: 1.4rem;
+      width: 65%;
+    }
+    @include largeBreakpoint {
+      font-size: 2.1rem;
+    }
+    @include extraLargeBreakpoint {
+      font-size: 2.4rem;
+    }
+    .container-rotate span {
+      opacity: 0;
+      animation: rotate-word 20s linear infinite;
+      position: absolute;
+      overflow: hidden;
+    }
+    .container-rotate span:nth-child(2) {
+      animation-delay: 2.5s;
+    }
+    .container-rotate span:nth-child(3) {
+      animation-delay: 5s;
+    }
+    .container-rotate span:nth-child(4) {
+      animation-delay: 7.5s;
+    }
+    .container-rotate span:nth-child(5) {
+      animation-delay: 10s;
+    }
+    .container-rotate span:nth-child(6) {
+      animation-delay: 12.5s;
+    }
+    .container-rotate span:nth-child(7) {
+      animation-delay: 15s;
+    }
+    .container-rotate span:nth-child(8) {
+      animation-delay: 17.5s;
+    }
+    .rotate {
+      text-indent: .25em;
+    }
+  }
 }
-#welcome-section h1 {
-  font-size: 5rem;
-  padding-bottom: 2rem;
-  padding-top: 10%;
-}
-.welcome-subtitle {
-  font-size: 2.6rem;
-  border: none;
-  width: 70%;
-}
-.subtitle {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.long-description {
-  line-height: 1.7;
-  margin-top: 1rem;
-}
+
+
