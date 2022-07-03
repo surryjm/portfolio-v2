@@ -100,13 +100,13 @@
           padding-top: 40px;
           // flex-direction: column;
         }
-        div:nth-of-type(2) > a:nth-of-type(2) {
+        a:nth-of-type(2) {
           @include extraSmallBreakpoint {
-            padding-top: 50px;
+            padding-top: 60px;
           }
-          @include largeBreakpoint {
-            padding-top: 50px;
-          }
+          // @include largeBreakpoint {
+          //   padding-top: 50px;
+          // }
         }
       }
     }
