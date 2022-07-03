@@ -19,7 +19,7 @@ export default function Navigation({ isNavFull, setIsNavFull, toggleClass, toggl
     <div className="Navigation">
       <nav id="navbar" className="navbar">
         <Logo toggleNavClose={toggleNavClose} />
-        <button id="hamburger-icon" onClick={() => setIsNavFull(!isNavFull)}>
+        <button aria-label="hamburger-icon" id="hamburger-icon" onClick={() => setIsNavFull(!isNavFull)}>
           <FontAwesomeIcon icon={faBars} aria-hidden="true" className="hamburger-icon" />
         </button>
         <div>
