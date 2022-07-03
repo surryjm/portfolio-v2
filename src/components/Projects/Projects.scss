@@ -20,6 +20,14 @@
   .wrapper > .subtitle {
     text-align: left;
     margin-bottom: .75rem;
+    @include extraSmallThruSmallBreakpoints {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    @include mediumBreakpoint {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
   }
   .wrapper > .projects-container {
     display: grid;

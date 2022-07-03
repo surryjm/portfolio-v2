@@ -18,26 +18,20 @@
     @include extraSmallThruSmallBreakpoints {
       font-size: 1.3rem;
       margin-bottom: 2rem;
-      text-align: center;
     }
     @include mediumBreakpoint {
       font-size: 1.3rem;
       margin-bottom: 2rem;
-      text-align: center;
     }
   }
   .wrapper > .long-description {
     line-height: 1.7;
     margin-top: 1rem;
-    @include extraSmallThruSmallBreakpoints {
+    @include extraSmallThruMediumBreakpoints {
       width: 100%;
       line-height: 1.7;
       margin-top: 1rem;
-    }
-    @include mediumBreakpoint {
-      width: 100%;
-      line-height: 1.7;
-      margin-top: 1rem;
+      font-size: 1.2rem;
     }
   }
 }
