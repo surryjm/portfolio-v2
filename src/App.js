@@ -8,8 +8,6 @@ import './styles/global.scss';
 
 function App() {
   const [isNavFull, setIsNavFull] = useState(false);
-  // const [isLargeBreakpoint, setIsLargeBreakpoint] = useState(window.innerWidth > 768);
-  // const [isLargeBreakpoint, setIsLargeBreakpoint] = useState(false);
 
   const toggleClass = () => {
     setIsNavFull(!isNavFull);
@@ -49,7 +47,6 @@ function App() {
             isNavFull={ isNavFull } 
             toggleClass={toggleClass}
             toggleNavClose={toggleNavClose}
-            // isLargeBreakpoint={ isLargeBreakpoint }
           />
         </div>
       </header>

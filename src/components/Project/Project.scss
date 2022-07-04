@@ -98,15 +98,11 @@
         }
         @include largeBreakpoint {
           padding-top: 40px;
-          // flex-direction: column;
         }
         a:nth-of-type(2) {
           @include extraSmallBreakpoint {
             padding-top: 60px;
           }
-          // @include largeBreakpoint {
-          //   padding-top: 50px;
-          // }
         }
       }
     }

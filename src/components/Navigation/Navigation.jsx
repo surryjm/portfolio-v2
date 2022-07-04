@@ -3,8 +3,6 @@ import { HashLink } from 'react-router-hash-link';
 import Logo from '../Logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-// import classnames from 'classnames';
-// const classNames = require('classnames');
 import './Navigation.scss';
 
 const navigationItems = [
@@ -24,11 +22,6 @@ export default function Navigation({ isNavFull, setIsNavFull, toggleClass, toggl
         </button>
         <div>
           <ul className={"navMenu " + (isNavFull ? "navShowing" : "navNotShowing")}>
-          {/* <ul className={classnames("navMenu", {
-            navClass: isNavFull, 
-            "navNotShowing": !isNavFull,
-            " ": isLargeBreakpoint
-          })}> */}
           {navigationItems.map((navItem, index) => (
             <li> 
               <HashLink to={navItem.url} key={navItem.label} className="gradient-link nav-links" onClick={toggleClass}>{navItem.label}</HashLink>
