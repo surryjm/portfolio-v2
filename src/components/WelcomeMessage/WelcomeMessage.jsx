@@ -6,23 +6,13 @@ export default function WelcomeMessage() {
   return (
     <section id="welcome-section">
       <div className="wrapper">
-        <h1>Hi! I'm Surry</h1>
-        <p className="welcome-subtitle">I'm a Seattle-based front-end developer and
-          <span className="container-rotate">
-            <span className="rotate">a Mom.</span>
-            <span className="rotate">an instructional assistant.</span>
-            <span className="rotate">a runner.</span>
-            <span className="rotate">a hiker.</span>
-            <span className="rotate">a Star Wars nerd.</span>
-            <span className="rotate">a bad pun enthusiast.</span>
-            <span className="rotate">a baker.</span>
-            <span className="rotate">an eternal student.</span>
-          </span>
+        <h1>Hi! I'm Surry <span>👋</span></h1>
+        <p className="welcome-subtitle">I'm a web developer based in Seattle, Washington.
+        </p>
+        <p className="download-button">
+          <a className="download-link" href="Surry_Mowery_Portfolio_Resume.pdf" download="Surry_Mowery_Portfolio_Resume.pdf"><span>Download resume</span></a>
         </p>
       </div>
     </section>
   )
 }
-
-
-

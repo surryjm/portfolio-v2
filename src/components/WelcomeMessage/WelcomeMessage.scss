@@ -30,15 +30,15 @@
     padding-bottom: 2rem;
     padding-top: 10%;
     @include extraSmallBreakpoint {
-      font-size: 2.3rem;
+      font-size: 1.5rem;
       padding: 0 1rem .75rem 0;
     }
     @include smallBreakpoint {
-      font-size: 2.6rem;
+      font-size: 2rem;
       padding: 0 1rem .75rem 0;
     }
     @include mediumBreakpoint {
-      font-size: 3.8rem;
+      font-size: 3rem;
       padding: 0 1rem .75rem 0;
     }
     @include largeBreakpoint {
@@ -47,9 +47,23 @@
     @include extraLargeBreakpoint {
       font-size: 4.5rem;
     }
+    span {
+      display: inline-block;
+      font-family: 'Noto Emoji';
+      font-weight: 400;
+      background-color: $color-white;
+      background-image: linear-gradient(-45deg, $color-orange, $color-pink, $color-blue, $color-seafoam);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+      animation: gradient 10s ease infinite;
+
+    }
   }
   .welcome-subtitle {
-    font-size: 2.6rem;
+    font-size: 2rem;
     border: none;
     width: 70%;
     @include extraSmallBreakpoint {
@@ -57,22 +71,16 @@
       width: 45%;
     }
     @include smallBreakpoint {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       width: 65%;
     }
     @include mediumBreakpoint {
       font-size: 1.4rem;
       width: 65%;
     }
-    @include largeBreakpoint {
-      font-size: 2.1rem;
-    }
-    @include extraLargeBreakpoint {
-      font-size: 2.4rem;
-    }
     .container-rotate span {
       opacity: 0;
-      animation: rotate-word 20s linear infinite;
+      animation: rotate-word 10s linear infinite;
       position: absolute;
       overflow: hidden;
     }
@@ -85,20 +93,33 @@
     .container-rotate span:nth-child(4) {
       animation-delay: 7.5s;
     }
-    .container-rotate span:nth-child(5) {
-      animation-delay: 10s;
-    }
-    .container-rotate span:nth-child(6) {
-      animation-delay: 12.5s;
-    }
-    .container-rotate span:nth-child(7) {
-      animation-delay: 15s;
-    }
-    .container-rotate span:nth-child(8) {
-      animation-delay: 17.5s;
-    }
     .rotate {
       text-indent: .25em;
+    }
+  }
+  .download-button {
+    padding-top: 4.5rem;
+    z-index: 1;
+    .download-link > span {
+      font-size: 1.4rem;
+      color: $color-white;
+      border: 1px solid $color-white;
+      padding: 15px;
+      transition: .3s;
+      @include extraSmallBreakpoint {
+        font-size: 1rem;
+        padding: 10px;
+      }
+      @include smallBreakpoint {
+        font-size: 1rem;
+        padding: 10px;
+      }
+    }
+    .download-link > span:hover {
+      background-color: $color-white;
+      color: $primary-color;
+      border: 1px solid $color-white;
+      padding: 15px;
     }
   }
 }

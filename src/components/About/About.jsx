@@ -7,18 +7,18 @@ export default function About() {
     <section id="about">
         <div className="wrapper">
           <h2>About</h2>
-          <p className="subtitle">Front-End Developer, Previous Customer Success Manager</p>
-          <p className="long-description">I have 10 years of experience providing high-touch customer support for clients, 
-            anticipating their needs, prioritizing issues, and communicating between teams – a blend of empathy, 
-            customer advocacy and creative problem solving.</p>
-          <p className="long-description">I've always had an interest in front-end development and started down the 
-            coding rabbit hole in 2019, with freeCodeCamp. From there I completed the Certificate in Front-End 
-            Development with HTML, CSS & JavaScript and then the Certificate in Full-Stack Development with JavaScript, 
-            both through the University of Washington Professional & Continuing Education program. I've been the 
-            instructional assistant for the Full-Stack program since January 2022.</p>
-          <p className="long-description">I'm excited to bring my customer background to a developer role and thrive 
-            in an environment that prioritizes learning, teamwork and diversity.</p>
+          <p className="subtitle">Web Developer With a Background in Technical Support</p>
+          <p className="long-description">I'm a web developer with experience building and 
+          implementing web applications with HTML, CSS, and JavaScript.</p>
+          <p className="long-description">I'm based in beautiful Seattle, Washington, where I live with my wonderful husband
+          and two amazing kiddos.</p>
+          <p className="long-description">My Masters is in Information Management, Bachelors is in Art History, 
+          and I've completed the Full-Stack and Front-End certificate programs through the University of Washington.</p>
+          <p className="long-description">I'm transitioning from a background in technical support and customer advocacy, 
+          and volunteer as a web developer for several nonprofits.</p>
+          <p className="long-description">I'm also currently accepting freelance clients for web development projects.</p>
         </div>
       </section>
   )
 }
+
