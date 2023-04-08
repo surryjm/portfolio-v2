@@ -9,21 +9,39 @@ import educationJpg from '../../assets/education-app-image.jpg';
 import education337 from '../../assets/education-app-image-337.webp';
 import education452 from '../../assets/education-app-image-452.webp';
 import education552 from '../../assets/education-app-image-552.webp';
-import contactJpg from '../../assets/contact-form-image.jpg';
-import contact337 from '../../assets/contact-form-image-337.webp';
-import contact452 from '../../assets/contact-form-image-452.webp';
-import contact552 from '../../assets/contact-form-image-552.webp';
+import oliverWymanConnectJpg from '../../assets/oliver-wyman-connect-homepage-image.jpg';
+import oliverWymanConnect337 from '../../assets/oliver-wyman-connect-homepage-337.jpg';
+import oliverWymanConnect452 from '../../assets/oliver-wyman-connect-homepage-452.jpg';
+import oliverWymanConnect552 from '../../assets/oliver-wyman-connect-homepage-552.jpg';
+import wordleishJpg from '../../assets/wordle-ish-image.jpg';
+import wordleish337 from '../../assets/wordle-ish-image-337.jpg';
+import wordleish452 from '../../assets/wordle-ish-image-452.jpg';
+import wordleish552 from '../../assets/wordle-ish-image-552.jpg';
 import rockPaperScissorsJpg from '../../assets/rock-paper-scissors-image.jpg';
 import rockPaperScissors337 from '../../assets/rock-paper-scissors-image-337.webp';
 import rockPaperScissors452 from '../../assets/rock-paper-scissors-image-452.webp';
 import rockPaperScissors552 from '../../assets/rock-paper-scissors-image-552.webp';
+import seattleLiteracyJpg from '../../assets/seattle-literacy-image.jpg';
+import seattleLiteracy337 from '../../assets/seattle-literacy-image-337.jpg';
+import seattleLiteracy452 from '../../assets/seattle-literacy-image-452.jpg';
+import seattleLiteracy552 from '../../assets/seattle-literacy-image-552.jpg';
 
 
 export default function Projects() {
   const projectItems = [
     {
-      title: "Coffee Shop website", 
-      description: "A prototype site for my friend's coffee shop, Ten Ton Coffee. Made with Vue, Nuxt, Axios, SCSS and deployed with Netlify", 
+      title: "Oliver Wyman Connect homepage", 
+      description: "Built Wordpress page from client mockups using HTML, CSS, JavaScript and PHP, and configured and styled cookie banner with OneTrust.", 
+      siteURL: "https://www.oliverwymanconnect.com/login/", 
+      jpg: `${oliverWymanConnectJpg}`,
+      webp337: `${oliverWymanConnect337}`,
+      webp452: `${oliverWymanConnect452}`,
+      webp552: `${oliverWymanConnect552}`
+    },
+    
+    {
+      title: "Coffee Shop site", 
+      description: "Built prototype site for coffee shop using Vue, Nuxt, Axios and Sass and deployed with Netlify.", 
       siteURL: "https://festive-joliot-8258ef.netlify.app/", 
       repoURL: "https://github.com/surryjm/coffee-shop",
       jpg: `${coffeeJpg}`,
@@ -31,11 +49,31 @@ export default function Projects() {
       webp452: `${coffee452}`,
       webp552: `${coffee552}`
     },
+
+    {
+      title: "Wordle-ish", 
+      description: "Designed variation of Wordle built on HTML, CSS and JavaScript and deployed with GitHub Pages.", 
+      siteURL: "https://surryjm.github.io/wordle-clone/", 
+      repoURL: "https://github.com/surryjm/wordle-clone",
+      jpg: `${wordleishJpg}`,
+      webp337: `${wordleish337}`,
+      webp452: `${wordleish452}`,
+      webp552: `${wordleish552}`
+    },
+
+    {
+      title: "Seattle Literacy site enhancements", 
+      description: "Volunteer project for their Wordpress site. Set up staging environment and implemented CSS, accessibility and SEO improvements.", 
+      siteURL: "https://seattleliteracy.org/", 
+      jpg: `${seattleLiteracyJpg}`,
+      webp337: `${seattleLiteracy337}`,
+      webp452: `${seattleLiteracy452}`,
+      webp552: `${seattleLiteracy552}`
+    },
   
     {
       title: "Education App", 
-      description: "Group project app that allows teachers, students and parents to log in and view the site according to their role - built with MongoDB, Express, Node.js, Mustache and Bootstrap, deployed with Heroku", 
-      siteURL: "https://dry-wave-18780.herokuapp.com/", 
+      description: "Group project app that allows teachers, students and parents to log in and view the site according to their role. I was responsible for connecting the front-end to the back-end. Built with MongoDB, Express, Node.js, Mustache and Bootstrap, deployed with Heroku.", 
       repoURL: "https://github.com/JS330-Education-App/final-project",
       jpg: `${educationJpg}`,
       webp337: `${education337}`,
@@ -44,19 +82,8 @@ export default function Projects() {
     },
   
     {
-      title: "Contact Form", 
-      description: "Made with React, Firebase for the database, Axios and Nodemailer to email the form submission, Google reCAPTCHA v2 to prevent spam and deployed via Netlify", 
-      siteURL: "https://cocky-wing-2d8006.netlify.app/", 
-      repoURL: "https://github.com/surryjm/contact-form-2",
-      jpg: `${contactJpg}`,
-      webp337: `${contact337}`,
-      webp452: `${contact452}`,
-      webp552: `${contact552}`
-    },
-  
-    {
       title: "Rock, Paper, Scissors", 
-      description: "A simple setup of the classic game, built with HTML, CSS (some Bootstrap) and JavaScript, using the Pexels API, deployed with Netlify", 
+      description: "Variation of the classic game, built with HTML, CSS (some Bootstrap) and JavaScript, using the Pexels API, deployed with Netlify.", 
       siteURL: "https://hardcore-kilby-aa9ec0.netlify.app/", 
       repoURL: "https://bitbucket.org/surryjm/jscript-310b-final-project-winter-2021/src/master/",
       jpg: `${rockPaperScissorsJpg}`,
@@ -70,7 +97,7 @@ export default function Projects() {
     <section id="projects">
       <div className="wrapper">
         <h2>Projects</h2>
-        <p className="subtitle">A Few Things I've Built</p>
+        <p className="subtitle">Highlighted Work</p>
         <div className="projects-container">
           <Project projects={projectItems}/>
         </div>

@@ -16,7 +16,7 @@ export default function About() {
           and I've completed the Full-Stack and Front-End certificate programs through the University of Washington.</p>
           <p className="long-description">I'm transitioning from a background in technical support and customer advocacy, 
           and volunteer as a web developer for several nonprofits.</p>
-          <p className="long-description">I'm also currently accepting freelance clients for web development projects.</p>
+          <p className="long-description">Currently accepting freelance clients for web development projects.</p>
         </div>
       </section>
   )

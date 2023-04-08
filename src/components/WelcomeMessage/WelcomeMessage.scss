@@ -22,6 +22,9 @@
   @include mediumBreakpoint {
     margin: 0;
   }
+  // @include mediumToLargeWidthMedHeight {
+
+  // }
   @include extraLargeBreakpoint {
     padding: 10% 0;
   }
@@ -30,7 +33,7 @@
     padding-bottom: 2rem;
     padding-top: 10%;
     @include extraSmallBreakpoint {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       padding: 0 1rem .75rem 0;
     }
     @include smallBreakpoint {
@@ -59,7 +62,6 @@
       -webkit-text-fill-color: transparent; 
       -moz-text-fill-color: transparent;
       animation: gradient 10s ease infinite;
-
     }
   }
   .welcome-subtitle {

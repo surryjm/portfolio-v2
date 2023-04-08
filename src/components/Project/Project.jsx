@@ -30,8 +30,8 @@ export default function Project( {projects} ) {
             <p>{item.description}</p>
           </div>
           <div>
-            <a href={item.siteURL} target="_blank" rel="noreferrer" className="project-link"><span>View Site</span></a> 
-            <a href={item.repoURL} target="_blank" rel="noreferrer" className="project-repo"><span>View Repo</span></a> 
+            {item.siteURL && <a href={item.siteURL} target="_blank" rel="noreferrer" className="project-link"><span>View Site</span></a>} 
+            {item.repoURL && <a href={item.repoURL} target="_blank" rel="noreferrer" className="project-repo"><span>View Repo</span></a>} 
           </div>
         </div>
       </div>
