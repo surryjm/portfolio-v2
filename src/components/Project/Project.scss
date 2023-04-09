@@ -71,6 +71,10 @@
         border: 1px solid $primary-color;
         padding: 20px;
       }
+      .attribution {
+        font-size: .9rem;
+        padding-top: 1rem;
+      }
       div > p {
         line-height: 1.7;
         @include extraSmallThruMediumBreakpoints {

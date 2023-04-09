@@ -52,7 +52,8 @@ export default function Projects() {
 
     {
       title: "Wordle-ish", 
-      description: "Designed variation of Wordle built on HTML, CSS and JavaScript and deployed with GitHub Pages.", 
+      description: "Designed variation of Wordle built on HTML, CSS and JavaScript and deployed with GitHub Pages.",
+      attribute: "Background image by Grey Wight on Unsplash.", 
       siteURL: "https://surryjm.github.io/wordle-clone/", 
       repoURL: "https://github.com/surryjm/wordle-clone",
       jpg: `${wordleishPng}`,
@@ -84,6 +85,7 @@ export default function Projects() {
     {
       title: "Rock, Paper, Scissors", 
       description: "Variation of the classic game, built with HTML, CSS (some Bootstrap) and JavaScript, using the Pexels API, deployed with Netlify.",
+      attribute: "Background image by zlatko_plamenov on Freepik.", 
       siteURL: "https://hardcore-kilby-aa9ec0.netlify.app/", 
       repoURL: "https://bitbucket.org/surryjm/jscript-310b-final-project-winter-2021/src/master/",
       jpg: `${rockPaperScissorsPng}`,

@@ -28,6 +28,7 @@ export default function Project( {projects} ) {
           <div>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
+            <p className="attribution">{item.attribute && item.attribute}</p>
           </div>
           <div>
             {item.siteURL && <a href={item.siteURL} target="_blank" rel="noreferrer" className="project-link"><span>View Site</span></a>} 
