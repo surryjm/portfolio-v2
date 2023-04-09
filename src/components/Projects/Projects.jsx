@@ -17,10 +17,10 @@ import wordleishPng from '../../assets/wordle-ish-image.png';
 import wordleish337 from '../../assets/wordle-ish-image-337.png';
 import wordleish452 from '../../assets/wordle-ish-image-452.png';
 import wordleish552 from '../../assets/wordle-ish-image-552.png';
-import rockPaperScissorsJpg from '../../assets/rock-paper-scissors-image.jpg';
-import rockPaperScissors337 from '../../assets/rock-paper-scissors-image-337.webp';
-import rockPaperScissors452 from '../../assets/rock-paper-scissors-image-452.webp';
-import rockPaperScissors552 from '../../assets/rock-paper-scissors-image-552.webp';
+import rockPaperScissorsPng from '../../assets/rock-paper-scissors-image.png';
+import rockPaperScissors337 from '../../assets/rock-paper-scissors-image-337.png';
+import rockPaperScissors452 from '../../assets/rock-paper-scissors-image-452.png';
+import rockPaperScissors552 from '../../assets/rock-paper-scissors-image-552.png';
 import seattleLiteracyPng from '../../assets/seattle-literacy-image.png';
 import seattleLiteracy337 from '../../assets/seattle-literacy-image-337.png';
 import seattleLiteracy452 from '../../assets/seattle-literacy-image-452.png';
@@ -83,10 +83,10 @@ export default function Projects() {
   
     {
       title: "Rock, Paper, Scissors", 
-      description: "Variation of the classic game, built with HTML, CSS (some Bootstrap) and JavaScript, using the Pexels API, deployed with Netlify.", 
+      description: "Variation of the classic game, built with HTML, CSS (some Bootstrap) and JavaScript, using the Pexels API, deployed with Netlify.",
       siteURL: "https://hardcore-kilby-aa9ec0.netlify.app/", 
       repoURL: "https://bitbucket.org/surryjm/jscript-310b-final-project-winter-2021/src/master/",
-      jpg: `${rockPaperScissorsJpg}`,
+      jpg: `${rockPaperScissorsPng}`,
       webp337: `${rockPaperScissors337}`,
       webp452: `${rockPaperScissors452}`,
       webp552: `${rockPaperScissors552}`
