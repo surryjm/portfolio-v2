@@ -30,7 +30,7 @@ import seattleLiteracy552 from '../../assets/seattle-literacy-image-552.png';
 export default function Projects() {
   const projectItems = [
     {
-      title: "Oliver Wyman Connect homepage", 
+      title: "Alumni Network homepage", 
       description: "Built Wordpress page from client mockups using HTML, CSS, JavaScript and PHP, and configured and styled cookie banner with OneTrust.", 
       siteURL: "https://www.oliverwymanconnect.com/login/", 
       jpg: `${oliverWymanConnectPng}`,
