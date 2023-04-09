@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  height: 60vh;
+  height: 70vh;
   border: none;
   background-color: $primary-color;
   color: $color-white;
@@ -80,24 +80,24 @@
       font-size: 1.4rem;
       width: 65%;
     }
-    .container-rotate span {
-      opacity: 0;
-      animation: rotate-word 10s linear infinite;
-      position: absolute;
-      overflow: hidden;
-    }
-    .container-rotate span:nth-child(2) {
-      animation-delay: 2.5s;
-    }
-    .container-rotate span:nth-child(3) {
-      animation-delay: 5s;
-    }
-    .container-rotate span:nth-child(4) {
-      animation-delay: 7.5s;
-    }
-    .rotate {
-      text-indent: .25em;
-    }
+    // .container-rotate span {
+    //   opacity: 0;
+    //   animation: rotate-word 10s linear infinite;
+    //   position: absolute;
+    //   overflow: hidden;
+    // }
+    // .container-rotate span:nth-child(2) {
+    //   animation-delay: 2.5s;
+    // }
+    // .container-rotate span:nth-child(3) {
+    //   animation-delay: 5s;
+    // }
+    // .container-rotate span:nth-child(4) {
+    //   animation-delay: 7.5s;
+    // }
+    // .rotate {
+    //   text-indent: .25em;
+    // }
   }
   .download-button {
     padding-top: 4.5rem;

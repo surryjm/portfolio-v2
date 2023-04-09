@@ -9,22 +9,22 @@ import educationJpg from '../../assets/education-app-image.jpg';
 import education337 from '../../assets/education-app-image-337.webp';
 import education452 from '../../assets/education-app-image-452.webp';
 import education552 from '../../assets/education-app-image-552.webp';
-import oliverWymanConnectJpg from '../../assets/oliver-wyman-connect-homepage-image.jpg';
-import oliverWymanConnect337 from '../../assets/oliver-wyman-connect-homepage-337.jpg';
-import oliverWymanConnect452 from '../../assets/oliver-wyman-connect-homepage-452.jpg';
-import oliverWymanConnect552 from '../../assets/oliver-wyman-connect-homepage-552.jpg';
-import wordleishJpg from '../../assets/wordle-ish-image.jpg';
-import wordleish337 from '../../assets/wordle-ish-image-337.jpg';
-import wordleish452 from '../../assets/wordle-ish-image-452.jpg';
-import wordleish552 from '../../assets/wordle-ish-image-552.jpg';
+import oliverWymanConnectPng from '../../assets/oliver-wyman-connect-homepage-image.png';
+import oliverWymanConnect337 from '../../assets/oliver-wyman-connect-homepage-image-337.png';
+import oliverWymanConnect452 from '../../assets/oliver-wyman-connect-homepage-image-452.png';
+import oliverWymanConnect552 from '../../assets/oliver-wyman-connect-homepage-image-552.png';
+import wordleishPng from '../../assets/wordle-ish-image.png';
+import wordleish337 from '../../assets/wordle-ish-image-337.png';
+import wordleish452 from '../../assets/wordle-ish-image-452.png';
+import wordleish552 from '../../assets/wordle-ish-image-552.png';
 import rockPaperScissorsJpg from '../../assets/rock-paper-scissors-image.jpg';
 import rockPaperScissors337 from '../../assets/rock-paper-scissors-image-337.webp';
 import rockPaperScissors452 from '../../assets/rock-paper-scissors-image-452.webp';
 import rockPaperScissors552 from '../../assets/rock-paper-scissors-image-552.webp';
-import seattleLiteracyJpg from '../../assets/seattle-literacy-image.jpg';
-import seattleLiteracy337 from '../../assets/seattle-literacy-image-337.jpg';
-import seattleLiteracy452 from '../../assets/seattle-literacy-image-452.jpg';
-import seattleLiteracy552 from '../../assets/seattle-literacy-image-552.jpg';
+import seattleLiteracyPng from '../../assets/seattle-literacy-image.png';
+import seattleLiteracy337 from '../../assets/seattle-literacy-image-337.png';
+import seattleLiteracy452 from '../../assets/seattle-literacy-image-452.png';
+import seattleLiteracy552 from '../../assets/seattle-literacy-image-552.png';
 
 
 export default function Projects() {
@@ -33,7 +33,7 @@ export default function Projects() {
       title: "Oliver Wyman Connect homepage", 
       description: "Built Wordpress page from client mockups using HTML, CSS, JavaScript and PHP, and configured and styled cookie banner with OneTrust.", 
       siteURL: "https://www.oliverwymanconnect.com/login/", 
-      jpg: `${oliverWymanConnectJpg}`,
+      jpg: `${oliverWymanConnectPng}`,
       webp337: `${oliverWymanConnect337}`,
       webp452: `${oliverWymanConnect452}`,
       webp552: `${oliverWymanConnect552}`
@@ -55,7 +55,7 @@ export default function Projects() {
       description: "Designed variation of Wordle built on HTML, CSS and JavaScript and deployed with GitHub Pages.", 
       siteURL: "https://surryjm.github.io/wordle-clone/", 
       repoURL: "https://github.com/surryjm/wordle-clone",
-      jpg: `${wordleishJpg}`,
+      jpg: `${wordleishPng}`,
       webp337: `${wordleish337}`,
       webp452: `${wordleish452}`,
       webp552: `${wordleish552}`
@@ -65,7 +65,7 @@ export default function Projects() {
       title: "Seattle Literacy site enhancements", 
       description: "Volunteer project for their Wordpress site. Set up staging environment and implemented CSS, accessibility and SEO improvements.", 
       siteURL: "https://seattleliteracy.org/", 
-      jpg: `${seattleLiteracyJpg}`,
+      jpg: `${seattleLiteracyPng}`,
       webp337: `${seattleLiteracy337}`,
       webp452: `${seattleLiteracy452}`,
       webp552: `${seattleLiteracy552}`

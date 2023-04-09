@@ -16,7 +16,7 @@ export default function Project( {projects} ) {
             type="image/webp" />
           <source 
             srcSet={item.jpg}
-            type="image/jpeg" />
+            type="image/jpg" />
           <img 
             src={item.jpg}
             alt={item.title} 

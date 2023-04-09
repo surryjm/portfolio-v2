@@ -35,4 +35,10 @@
       font-size: 1.2rem;
     }
   }
+  p a {
+    text-decoration: underline;
+  }
+  p a:hover {
+    text-decoration-thickness: .25em;
+  }
 }
