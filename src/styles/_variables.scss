@@ -6,7 +6,7 @@ $color-pink: #e73c7e;
 $color-blue: #23a6d5;
 $color-seafoam: #23d5ab;
 
-/************ Screen sizes **************/
+/************ Screen sizes - width **************/
 $screen-xsm: 300px;
 $screen-sm-start: 301px;
 $screen-sm-end: 500px;
@@ -17,6 +17,10 @@ $screen-l-end: 1024px;
 $screen-xl-start: 1025px;
 $screen-xl-end: 1200px;
 // $screen-full: 1400px;
+
+/************ Screen sizes - height **************/
+$screenHeight-sm: 300px;
+$screenHeight-md: 600px;
 
 /****** Extra small mobile devices (Galaxy Fold, etc.) ******/
 // @media screen and (max-width: 300px)

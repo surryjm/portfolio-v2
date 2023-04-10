@@ -48,8 +48,9 @@
   }
 }
 
-// @mixin mediumToLargeWidthMedHeight {
-//   @media ((min-width: $screen-md-end) and (max-width: $screen-l-end)) and ((min-height: 600px) and (max-height: 637px)) {
-//     @content;
-//   }
-// }
+@mixin smallMedHeight {
+  @media (min-height: $screenHeight-sm) and (max-height: $screenHeight-md) {
+    @content;
+  }
+}
+// (min-width: $screen-sm-end) and 
