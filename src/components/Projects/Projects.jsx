@@ -5,7 +5,6 @@ import coffeeJpg from '../../assets/coffee-shop-image.jpg';
 import educationJpg from '../../assets/education-app-image.jpg';
 import oliverWymanConnectPng from '../../assets/oliver-wyman-connect-homepage-image.png';
 import wordleishPng from '../../assets/wordle-ish-image.png';
-import rockPaperScissorsPng from '../../assets/rock-paper-scissors-black-ipad-image.png';
 import seattleLiteracyPng from '../../assets/seattle-literacy-image.png';
 import calculatorPng from '../../assets/calculator-image.png';
 
@@ -58,15 +57,6 @@ export default function Projects() {
       repoURL: "https://github.com/JS330-Education-App/final-project",
       photo: `${educationJpg}`
     },
-  
-    {
-      title: "Rock, Paper, Scissors", 
-      description: "Variation of the classic game, built with HTML, CSS (some Bootstrap) and JavaScript, using the Pexels API, deployed with Netlify.",
-      attribute: "Background image by zlatko_plamenov on Freepik.", 
-      siteURL: "https://hardcore-kilby-aa9ec0.netlify.app/", 
-      repoURL: "https://bitbucket.org/surryjm/jscript-310b-final-project-winter-2021/src/master/",
-      photo: `${rockPaperScissorsPng}`,
-    }
   ]
 
   return (
