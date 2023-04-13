@@ -5,7 +5,7 @@ import coffeeJpg from '../../assets/coffee-shop-image.jpg';
 import educationJpg from '../../assets/education-app-image.jpg';
 import oliverWymanConnectPng from '../../assets/oliver-wyman-connect-homepage-image.png';
 import wordleishPng from '../../assets/wordle-ish-image.png';
-import rockPaperScissorsPng from '../../assets/rock-paper-scissors-image.png';
+import rockPaperScissorsPng from '../../assets/rock-paper-scissors-black-ipad-image.png';
 import seattleLiteracyPng from '../../assets/seattle-literacy-image.png';
 import calculatorPng from '../../assets/calculator-image.png';
 
