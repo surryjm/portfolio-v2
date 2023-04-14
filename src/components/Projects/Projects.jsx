@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../Project/Project';
 import './Projects.scss';
-// import coffeeJpg from '../../assets/coffee-shop-image.jpg';
+import coffeeJpg from '../../assets/coffee-shop-image.jpg';
 import educationJpg from '../../assets/education-app-image.jpg';
 import oliverWymanConnectPng from '../../assets/oliver-wyman-connect-homepage-image.png';
 import wordleishPng from '../../assets/wordle-ish-image.png';
@@ -18,13 +18,13 @@ export default function Projects() {
       photo: `${oliverWymanConnectPng}`
     },
     
-    // {
-    //   title: "Coffee Shop site", 
-    //   description: "Built prototype site for coffee shop using Vue, Nuxt, Axios and Sass and deployed with Netlify.", 
-    //   siteURL: "https://festive-joliot-8258ef.netlify.app/", 
-    //   repoURL: "https://github.com/surryjm/coffee-shop",
-    //   photo: `${coffeeJpg}`
-    // },
+    {
+      title: "Coffee Shop site", 
+      description: "Built prototype site for coffee shop using Vue, Nuxt, Axios and Sass and deployed with Netlify.", 
+      siteURL: "https://festive-joliot-8258ef.netlify.app/", 
+      repoURL: "https://github.com/surryjm/coffee-shop",
+      photo: `${coffeeJpg}`
+    },
 
     {
       title: "Wordle-ish", 
