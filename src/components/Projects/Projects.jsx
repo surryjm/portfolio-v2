@@ -18,13 +18,13 @@ export default function Projects() {
       photo: `${oliverWymanConnectPng}`
     },
     
-    {
-      title: "Coffee Shop site", 
-      description: "Built prototype site for coffee shop using Vue, Nuxt, Axios and Sass and deployed with Netlify.", 
-      siteURL: "https://festive-joliot-8258ef.netlify.app/", 
-      repoURL: "https://github.com/surryjm/coffee-shop",
-      photo: `${coffeeJpg}`
-    },
+    // {
+    //   title: "Coffee Shop site", 
+    //   description: "Built prototype site for coffee shop using Vue, Nuxt, Axios and Sass and deployed with Netlify.", 
+    //   siteURL: "https://festive-joliot-8258ef.netlify.app/", 
+    //   repoURL: "https://github.com/surryjm/coffee-shop",
+    //   photo: `${coffeeJpg}`
+    // },
 
     {
       title: "Wordle-ish", 
