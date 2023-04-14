@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../Project/Project';
 import './Projects.scss';
-import coffeeJpg from '../../assets/coffee-shop-image.jpg';
+// import coffeeJpg from '../../assets/coffee-shop-image.jpg';
 import educationJpg from '../../assets/education-app-image.jpg';
 import oliverWymanConnectPng from '../../assets/oliver-wyman-connect-homepage-image.png';
 import wordleishPng from '../../assets/wordle-ish-image.png';
