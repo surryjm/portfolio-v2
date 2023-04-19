@@ -10,7 +10,7 @@ export default function WelcomeMessage() {
         <p className="welcome-subtitle">I'm a web developer based in Seattle, Washington.
         </p>
         <p className="download-button">
-          <a className="download-link" href="Surry_Mowery_Web_Developer_Resume.pdf" download="Surry_Mowery_Portfolio_Resume.pdf"><span>Download resume</span></a>
+          <a className="download-link" href="Surry_Mowery_Portfolio_Resume.pdf" download="Surry_Mowery_Portfolio_Resume.pdf"><span>Download resume</span></a>
         </p>
       </div>
     </section>
